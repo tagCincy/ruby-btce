@@ -81,7 +81,7 @@ module Btce
       "ppc_btc" => 4,
       "ftc_btc" => 4
     }
-    KEY = YAML::load File.open 'btce-api-key.yml'    
+    KEY = YAML::load File.open 'config/btce-api-key.yml'    
 
     class << self
       def get_https(url, params = nil, sign = nil)
